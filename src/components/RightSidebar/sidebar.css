@@ -1,0 +1,70 @@
+.sidebar {
+  border-right: 1px solid var(--twitter-background);
+  @apply mr-0 ml-5 pl-5 flex-grow min-w-fit hidden;
+  /* min-width: 275px; */
+  /* font-family: inherit !important; */
+}
+@media (min-width: 450px) {
+  .sidebar {
+    display: block !important;
+  }
+}
+
+.sidebar-twittericon {
+  @apply mb-5 mt-5 mr-5;
+  margin-left: 0.9rem;
+  font-size: 30px !important;
+  color: var(--twitter-color);
+}
+
+.sidebar-button {
+  background-color: var(--old-twitter-color) !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 30px !important;
+  /* @apply  mt-5 ; */
+  height: 50px !important;
+  font-weight: 900 !important;
+  margin-top: 20px !important;
+  text-transform: inherit !important;
+  width: 90%;
+  display: none !important;
+}
+@media (min-width: 1280px) {
+  .sidebar-button {
+    display: block !important;
+  }
+}
+
+.user-info {
+  @apply mt-12;
+}
+.user-name {
+  align-items: start !important;
+  display: none !important;
+}
+
+@media (min-width: 1280px) {
+  .user-name {
+    display: inline-block !important;
+  }
+}
+
+.info-icon {
+  @apply ml-4;
+  display: none !important;
+}
+@media (min-width: 1280px) {
+  .info-icon {
+    display: inline-block !important;
+  }
+}
+
+.user-avatar {
+  @apply hidden;
+}
+@media (min-width: 450px) {
+  .user-avatar {
+    display: block !important;
+  }
+}
