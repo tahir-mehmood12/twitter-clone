@@ -16,12 +16,16 @@
 }
 
 .post-headerText > h3 {
-  @apply text-sm mt-1;
+  @apply text-sm mb-1;
 }
 
 .post-headerSpecial {
   @apply font-semibold text-xs;
   color: grey;
+}
+.post-badge {
+  font-size: 14px !important;
+  color: var(--old-twitter-color);
 }
 
 .post-description {

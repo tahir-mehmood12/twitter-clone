@@ -1,12 +1,14 @@
 import React from "react";
 import "./post.css";
 import { Avatar, Image } from "@chakra-ui/react";
+
 import {
   ChatBubbleOutlineRounded,
   FavoriteBorderRounded,
   FileDownload,
   PollRounded,
   RepeatRounded,
+  VerifiedRounded,
 } from "@mui/icons-material";
 
 export default function Post() {
@@ -19,7 +21,11 @@ export default function Post() {
         <div className="post-header">
           <div className="post-headerText">
             <h3>
-              Tahir Mehmood <span className="post-headerSpecial">@tahiroo</span>
+              Tahir Mehmood{" "}
+              <span className="post-headerSpecial">
+                {/* {verified &&  */}
+                <VerifiedRounded className="post-badge" /> @tahiroo
+              </span>
             </h3>
           </div>
           <div className="post-description">
