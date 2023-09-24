@@ -10,7 +10,7 @@ import {
 } from "@mui/icons-material";
 import ImageIcon from "@mui/icons-material/Image";
 import { useState } from "react";
-import { db } from "../../firebase";
+import { db, storage } from "../../firebase";
 import firebase from "firebase/compat/app";
 
 export default function Tweetbox() {
@@ -43,11 +43,14 @@ export default function Tweetbox() {
           />
         </div>
         <div className="tweetbox-emojis">
-          <ImageIcon />
-          <Gif />
-          <Ballot />
-          <CalendarMonth />
-          <LocationOnOutlined />
+          <label htmlFor="imageInput">
+            <ImageIcon className="cursor-pointer" />
+            <input id="imageInput" type="file" style={{ display: "none" }} />
+          </label>
+          <Gif className="cursor-pointer" />
+          <Ballot className="cursor-pointer" />
+          <CalendarMonth className="cursor-pointer" />
+          <LocationOnOutlined className="cursor-pointer" />
           <Button onClick={handleSendTweet} className="tweetbox-button">
             Post
           </Button>

@@ -12,7 +12,7 @@ import {
 } from "@mui/icons-material";
 
 const Post = forwardRef(
-  ({ displayName, userName, verified, text, avatar }, ref) => {
+  ({ displayName, userName, verified, text, avatar, image }, ref) => {
     return (
       <div className="post">
         <div className="post-avatar">
@@ -33,6 +33,7 @@ const Post = forwardRef(
               <p>{text}</p>
             </div>
           </div>
+          <div>{image}</div>
           {/* <Image src="./images/nature.jpg" alt="image" /> */}
           <div className="post-footer">
             <ChatBubbleOutlineRounded />
