@@ -16,6 +16,20 @@
   flex: 1;
 }
 
+.tweetbox-image-preview {
+  margin-top: 8px;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.tweetbox-image-preview img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .tweetbox-emojis {
   @apply ml-20 mt-3 gap-3 flex items-center;
   color: #50b7f5;
