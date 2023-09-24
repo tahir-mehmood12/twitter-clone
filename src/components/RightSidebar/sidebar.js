@@ -20,13 +20,9 @@ export default function Sidebar() {
     <div className="sidebar">
       <FaXTwitter className="sidebar-twittericon" />
 
-      <SidebarOptions active Icon={Home} text="Home" path="/home" />
+      <SidebarOptions active Icon={Home} text="Home" />
       <SidebarOptions Icon={Search} text="Explore" />
-      <SidebarOptions
-        Icon={NotificationsNone}
-        text="Notification"
-        path="/notification"
-      />
+      <SidebarOptions Icon={NotificationsNone} text="Notification" />
       <SidebarOptions active Icon={Message} text="Message" />
       <SidebarOptions active Icon={ListAltIcon} text="List" />
       <SidebarOptions active Icon={PeopleOutline} text="Communities" />
