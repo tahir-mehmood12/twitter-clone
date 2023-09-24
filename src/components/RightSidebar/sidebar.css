@@ -1,6 +1,6 @@
 .sidebar {
   border-right: 1px solid var(--twitter-background);
-  @apply mr-0 ml-5 pl-5 flex-grow min-w-fit hidden;
+  @apply mr-0 ml-5 pl-5  min-w-fit hidden;
   /* min-width: 275px; */
   /* font-family: inherit !important; */
 }

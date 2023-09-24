@@ -2,7 +2,7 @@
   border-right: 1px solid var(--twitter-background);
   /* flex: 0.4; */
   /* min-width: 660px; */
-  @apply flex-grow;
+  @apply flex-grow max-w-2xl;
 }
 
 .feed-header {

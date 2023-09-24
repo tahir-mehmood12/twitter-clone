@@ -29,13 +29,14 @@ export default function Sidebar() {
       <SidebarOptions active Icon={FaXTwitter} text="Verified" />
       <SidebarOptions active Icon={PermIdentity} text="Profile" />
       <SidebarOptions active Icon={MoreHoriz} text="More" />
+
       <Button className="sidebar-button" variant="outline">
         Post
       </Button>
       <div className="user-info">
         <HStack>
           <div className="user-avatar">
-            <Avatar />
+            <Avatar src="https://img.freepik.com/free-photo/fun-3d-illustration-american-referee_183364-81231.jpg?w=900&t=st=1695466776~exp=1695467376~hmac=c6783f8604ea2d824e13d5478a401c515f5bf064cb95a0ca25309cad7ba08c8d" />
           </div>
           <VStack className="user-name" gap="0.1">
             <p>Tahir Mehmood</p>
