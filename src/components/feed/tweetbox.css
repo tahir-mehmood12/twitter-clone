@@ -11,7 +11,7 @@
   @apply flex p-5;
 }
 
-.tweetbox-input > Input {
+.tweetbox-input > TextArea {
   @apply ml-4 border-none text-xl;
   flex: 1;
 }

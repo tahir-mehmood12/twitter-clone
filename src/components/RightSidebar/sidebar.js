@@ -14,15 +14,19 @@ import { Avatar, Button, HStack, VStack } from "@chakra-ui/react";
 
 import ListAltIcon from "@mui/icons-material/ListAlt";
 import { FaXTwitter } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 export default function Sidebar() {
   return (
     <div className="sidebar">
       <FaXTwitter className="sidebar-twittericon" />
-
-      <SidebarOptions active Icon={Home} text="Home" />
+      <Link to="/home">
+        <SidebarOptions active Icon={Home} text="Home" />
+      </Link>
       <SidebarOptions Icon={Search} text="Explore" />
-      <SidebarOptions Icon={NotificationsNone} text="Notification" />
+      <Link to="/notification">
+        <SidebarOptions Icon={NotificationsNone} text="Notification" />
+      </Link>
       <SidebarOptions active Icon={Message} text="Message" />
       <SidebarOptions active Icon={ListAltIcon} text="List" />
       <SidebarOptions active Icon={PeopleOutline} text="Communities" />

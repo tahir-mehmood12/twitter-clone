@@ -2,7 +2,10 @@
   border-right: 1px solid var(--twitter-background);
   /* flex: 0.4; */
   /* min-width: 660px; */
-  @apply flex-grow max-w-2xl;
+  @apply flex-grow max-w-2xl overflow-y-scroll;
+}
+.feed::-webkit-scrollbar {
+  display: none;
 }
 
 .feed-header {

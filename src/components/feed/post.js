@@ -33,14 +33,14 @@ const Post = forwardRef(
               <p>{text}</p>
             </div>
           </div>
-          <div>{image}</div>
+          {/* <div>{image}</div> */}
           {/* <Image src="./images/nature.jpg" alt="image" /> */}
           <div className="post-footer">
             <ChatBubbleOutlineRounded />
             <RepeatRounded />
             <FavoriteBorderRounded />
             <PollRounded />
-            <FileDownload />
+            <FileDownload className="rotate-180" />
           </div>
         </div>
       </div>
