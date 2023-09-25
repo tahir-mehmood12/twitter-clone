@@ -1,8 +1,5 @@
 .feed {
-  border-right: 1px solid var(--twitter-background);
-  /* flex: 0.4; */
-  /* min-width: 660px; */
-  @apply flex-grow max-w-2xl overflow-y-scroll;
+  @apply flex-grow max-w-2xl overflow-y-scroll border-r border-solid border-[#e6ecf0];
 }
 .feed::-webkit-scrollbar {
   display: none;

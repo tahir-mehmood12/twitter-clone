@@ -19,7 +19,9 @@ import { Link } from "react-router-dom";
 export default function Sidebar() {
   return (
     <div className="sidebar">
-      <FaXTwitter className="sidebar-twittericon" />
+      <Link to="/home">
+        <FaXTwitter className="sidebar-twittericon" />
+      </Link>
       <Link to="/home">
         <SidebarOptions active Icon={Home} text="Home" />
       </Link>
