@@ -23,16 +23,30 @@ export default function Sidebar() {
       <Link to="/home">
         <SidebarOptions active Icon={Home} text="Home" />
       </Link>
-      <SidebarOptions Icon={Search} text="Explore" />
+      <Link to="/explore">
+        <SidebarOptions Icon={Search} text="Explore" />
+      </Link>
       <Link to="/notification">
         <SidebarOptions Icon={NotificationsNone} text="Notification" />
       </Link>
-      <SidebarOptions active Icon={Message} text="Message" />
-      <SidebarOptions active Icon={ListAltIcon} text="List" />
-      <SidebarOptions active Icon={PeopleOutline} text="Communities" />
-      <SidebarOptions active Icon={FaXTwitter} text="Verified" />
-      <SidebarOptions active Icon={PermIdentity} text="Profile" />
-      <SidebarOptions active Icon={MoreHoriz} text="More" />
+      <Link to="/message">
+        <SidebarOptions active Icon={Message} text="Message" />
+      </Link>
+      <Link to="/list">
+        <SidebarOptions active Icon={ListAltIcon} text="List" />
+      </Link>
+      <Link to="/communities">
+        <SidebarOptions active Icon={PeopleOutline} text="Communities" />
+      </Link>
+      <Link to="/verified">
+        <SidebarOptions active Icon={FaXTwitter} text="Verified" />
+      </Link>
+      <Link to="/profile">
+        <SidebarOptions active Icon={PermIdentity} text="Profile" />
+      </Link>
+      <Link to="/more">
+        <SidebarOptions active Icon={MoreHoriz} text="More" />
+      </Link>
 
       <Button className="sidebar-button" variant="outline">
         Post
