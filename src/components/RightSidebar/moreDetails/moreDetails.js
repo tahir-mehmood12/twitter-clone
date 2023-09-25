@@ -1,8 +1,9 @@
 import React from "react";
+import "./moreDetails.css";
 
 export default function MoreDetails() {
   return (
-    <div>
+    <div className="moreDetails">
       <h1>MoreDetails</h1>
     </div>
   );

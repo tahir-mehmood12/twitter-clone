@@ -1,0 +1,11 @@
+.profile {
+  @apply flex-grow max-w-2xl overflow-y-scroll border-r border-solid border-[#e6ecf0] p-2;
+}
+
+.profile::-webkit-scrollbar {
+  @apply hidden;
+}
+
+h1 {
+  @apply font-bold text-3xl;
+}
