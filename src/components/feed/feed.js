@@ -5,6 +5,7 @@ import Tweetbox from "./tweetbox";
 import Post from "./post";
 import { useState, useEffect } from "react";
 import { db } from "../../firebase";
+// import FlipMove from "react-flip-move";
 import FlipMove from "react-flip-move";
 
 export default function Feed() {
@@ -42,7 +43,6 @@ export default function Feed() {
             verified={post.verified}
             text={post.text}
             avatar={post.avatar}
-            image={post.image}
           />
         ))}
       </FlipMove>
